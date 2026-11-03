@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfbf7;
+    color: #333;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #4a3319 !important;
+    color: white;
+    padding: 14px 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+nav a {
+    color: #f3e9dc;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #d4a373;
+    text-decoration: underline;
+}
+
+
+.content-wrapper {
+    flex: 1;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1, h2 {
+    color: #4a3319;
+}
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+th {
+    background-color: #6b4f31;
+    color: white;
+}
+
+
+input[type="text"], input[type="search"], input[type="date"], input[type="email"], input[type="password"], select {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+button, .btn {
+    background-color: #8c6239;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+button:hover, .btn:hover {
+    background-color: #6b4f31;
+}
+
+
+.dashboard-hero {
+    flex: 1;
+    width: 100%;
+    background: linear-gradient(rgba(44, 26, 10, 0.65), rgba(44, 26, 10, 0.65)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 50px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.dashboard-hero h1 {
+    color: #ffffff;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    background-color: #6b4f31; 
+    color: #fdfbf7;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    margin-top: auto; /* Memastikan footer selalu turun ke bawah */
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    nav a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .content-wrapper {
+        padding: 15px;
+    }
+    .dashboard-hero {
+        padding: 30px 20px;
+    }
+    .dashboard-hero h1 {
+        font-size: 2em;
+    }
+    input[type="text"], input[type="search"], input[type="date"], input[type="email"], input[type="password"], select {
+        max-width: 100%; 
+    }
+    table {
+        display: block;
+        overflow-x: auto; 
+    }
+}
