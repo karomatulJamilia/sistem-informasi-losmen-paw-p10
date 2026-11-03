@@ -37,7 +37,7 @@ $kamar = $pdo->query("SELECT r.id, r.nomor, rt.nama AS tipe, rt.tarif FROM rooms
         <input type="date" name="checkout" required style="width:300px;">
     </label><br><br>
 
-    <button type="submit">Simpan Reservasi</button>
-    <a href="index.php">Batal</a>
+    <button type="submit" class="btn">Simpan</button>
+    <a href="index.php" class="btn" style="background-color: #7f8c8d; text-decoration: none; margin-left: 10px;">Batal</a>
 </form>
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>

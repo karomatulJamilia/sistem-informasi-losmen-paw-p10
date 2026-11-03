@@ -44,8 +44,8 @@ require_once __DIR__ . '/../includes/header.php';
 <form method="post" style="background: #fff; padding: 15px; border: 1px solid #ddd; max-width: 400px;">
     <label>Nama Tamu:<br><input type="text" name="nama" value="<?= e($tamu['nama']) ?>" required></label><br>
     <label>Nomor Telepon:<br><input type="text" name="telepon" value="<?= e($tamu['telepon']) ?>" required></label><br>
-    <button type="submit">Simpan Perubahan</button>
-    <a href="index.php" style="margin-left: 10px;">Batal</a>
+    <button type="submit" class="btn">Simpan Perubahan</button>
+    <a href="index.php" class="btn" style="background-color: #7f8c8d; text-decoration: none; margin-left: 10px;">Batal</a>
 </form>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>

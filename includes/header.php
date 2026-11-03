@@ -16,7 +16,7 @@ $role = $_SESSION['role'] ?? '';
 <body>
     <nav style="background:#2c3e50; color:white; padding:12px 20px;">
         <strong>Halo, <?= e($_SESSION['nama']) ?> (<?= e($role) ?>)</strong> |
-        <a href="/PAW_B/losmen/index.php">Dashboard</a> |
+        <a href="/PAW_B/losmen/index.php">Dashboard</a> 
 
         <!-- MENU KHUSUS RESEPSIONIS (Operasional Tamu & Reservasi) -->
         <?php if ($role === 'RESEPSIONIS'): ?>

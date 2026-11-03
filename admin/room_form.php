@@ -52,7 +52,7 @@ require_once __DIR__ . '/../includes/header.php';
         </select>
     </label><br>
     <button type="submit">Simpan Kamar</button>
-    <a href="rooms.php" style="margin-left: 10px;">Batal</a>
+    <a href="rooms.php" class="btn" style="background-color: #7f8c8d; text-decoration: none; margin-left: 10px;">Batal</a>
 </form>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>
