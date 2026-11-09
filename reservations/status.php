@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../includes/auth.php';
+wajibRole(['RESEPSIONIS']);  
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
